@@ -137,3 +137,105 @@
 09:39:04.953 INFO  - Refreshed build settings on project hello_world 
 10:33:44.745 ERROR - Unexpected error while parsing XMD response ?: com.google.gson.JsonSyntaxException: com.google.gson.stream.MalformedJsonException: invalid number or unquoted string near  
 10:36:10.473 ERROR - Unexpected error while parsing XMD response ?: com.google.gson.JsonSyntaxException: com.google.gson.stream.MalformedJsonException: invalid number or unquoted string near  
+10:58:28.839 INFO  - Restoring local repository preferences: 
+		 D:\work\lprs2\2013_2014\Resene_vezbe\lab56\basic_system 
+10:58:28.886 ERROR - Unable to read in MSS file D:\ra234-2013\lprs2-lab5\SDK\SDK_Workspace\hello_world_bsp\system.mss. 
+10:58:31.101 ERROR - Unable to read in MSS file D:\ra234-2013\lprs2-lab5\SDK\SDK_Workspace\hello_world_bsp\system.mss. 
+10:58:31.117 ERROR - Unable to read in MSS file D:\ra234-2013\lprs2-lab5\SDK\SDK_Workspace\hello_world_bsp\system.mss. 
+10:58:31.148 WARN  - Unable to determine location of documentation for OS . 
+10:58:31.148 ERROR - Unable to read in MSS file D:\ra234-2013\lprs2-lab5\SDK\SDK_Workspace\hello_world_bsp\system.mss. 
+10:58:31.164 ERROR - Unable to read in MSS file D:\ra234-2013\lprs2-lab5\SDK\SDK_Workspace\hello_world_bsp\system.mss. 
+11:05:08.257 ERROR - FPGA Configuration failed.Connection to Board Failed
+
+
+    Failed to Open JTAG Cable
+    Cable target is not connected to the host
+ 
+11:06:41.654 ERROR - FPGA Configuration failed.Connection to Board Failed
+
+Failed to Scan JTAG Chain
+    Unknown Error
+ 
+11:08:15.263 ERROR - FPGA Configuration failed.Connection to Board Failed
+
+Failed to Scan JTAG Chain
+    Unknown Error
+ 
+11:08:29.462 ERROR - FPGA Configuration failed.Connection to Board Failed
+
+Failed to Scan JTAG Chain
+    Unknown Error
+ 
+11:10:25.861 ERROR - FPGA Configuration failed.Connection to Board Failed
+
+Failed to Scan JTAG Chain
+    Unknown Error
+ 
+11:10:50.860 INFO  - FPGA configured successfully with bitstream "D:/ra234-2013/lprs2-lab5/SDK/SDK_Workspace/basic_system_hw_platform/download.bit" 
+11:50:22.842 ERROR - FPGA Configuration failed.Connection to Board Failed
+
+
+    Failed to lock the JTAG cable for exclusive access
+
+ 
+11:52:45.270 ERROR - FPGA Configuration failed.Connection to Board Failed
+
+
+    Failed to lock the JTAG cable for exclusive access
+
+ 
+11:53:49.662 ERROR - FPGA Configuration failed.Connection to Board Failed
+
+
+    Failed to lock the JTAG cable for exclusive access
+
+ 
+11:54:21.535 ERROR - FPGA Configuration failed.Connection to Board Failed
+
+
+    Failed to lock the JTAG cable for exclusive access
+
+ 
+11:54:51.796 ERROR - FPGA Configuration failed.Connection to Board Failed
+
+
+    Failed to lock the JTAG cable for exclusive access
+
+ 
+11:56:43.430 ERROR - FPGA Configuration failed.Connection to Board Failed
+
+
+    Failed to lock the JTAG cable for exclusive access
+
+ 
+12:02:19.957 ERROR - FPGA Configuration failed.Connection to Board Failed
+
+
+    Failed to lock the JTAG cable for exclusive access
+
+ 
+12:02:47.225 ERROR - FPGA Configuration failed.Connection to Board Failed
+
+
+    Failed to lock the JTAG cable for exclusive access
+
+ 
+12:03:18.785 ERROR - FPGA Configuration failed.Connection to Board Failed
+
+
+    Failed to lock the JTAG cable for exclusive access
+
+ 
+12:04:02.562 ERROR - FPGA Configuration failed.Connection to Board Failed
+
+
+    Failed to lock the JTAG cable for exclusive access
+
+ 
+12:08:46.588 ERROR - FPGA Configuration failed.Connection to Board Failed
+
+
+    Failed to lock the JTAG cable for exclusive access
+
+ 
+12:08:51.387 ERROR - Unexpected error while parsing XMD response ?: com.google.gson.JsonSyntaxException: com.google.gson.stream.MalformedJsonException: invalid number or unquoted string near  

@@ -26,7 +26,12 @@ void clear_text_screen(Xuint32 BaseAddress){
 void print_string(Xuint32 BaseAddress, unsigned char string_s[], int lenght){
 	int i;
 	for (i = 0; i < lenght; i++){
-		VGA_PERIPH_MEM_mWriteMemory(BaseAddress + TEXT_MEM_OFF + cursor_position + i*4, (string_s[i]-0x40));
+		if(string_s[i] <= 90) {
+			VGA_PERIPH_MEM_mWriteMemory(BaseAddress + TEXT_MEM_OFF + cursor_position + i*4, (string_s[i]-0x40));
+		}
+		else {
+			VGA_PERIPH_MEM_mWriteMemory(BaseAddress + TEXT_MEM_OFF + cursor_position + i*4, (string_s[i]-0x60));
+		}
 	}
 }
 
@@ -50,4 +55,25 @@ void draw_square(Xuint32 BaseAddress){
 				}
 			}
 		}
+}
+
+void clear_screen (Xuint32 BaseAddress){
+	clear_text_screen(BaseAddress);
+	clear_graphics_screen(BaseAddress);
+}
+
+void print_char(Xuint32 BaseAddress, unsigned char character){
+	VGA_PERIPH_MEM_mWriteMemory(BaseAddress + TEXT_MEM_OFF + cursor_position + 4, (character - 0x40));
+}
+
+void set_foreground_color(Xuint32 BaseAddress, Xuint32 color){
+	VGA_PERIPH_MEM_mWriteMemory(BaseAddress + 0x10, color);
+}
+
+void set_background_color(Xuint32 BaseAddress, Xuint32 color){
+	VGA_PERIPH_MEM_mWriteMemory(BaseAddress + 0x14, color);
+}
+
+void set_font_size(Xuint32 BaseAddress, Xuint32 size){
+	VGA_PERIPH_MEM_mWriteMemory(BaseAddress + 0x0C, size);
 }
