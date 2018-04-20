@@ -239,3 +239,22 @@ Failed to Scan JTAG Chain
 
  
 12:08:51.387 ERROR - Unexpected error while parsing XMD response ?: com.google.gson.JsonSyntaxException: com.google.gson.stream.MalformedJsonException: invalid number or unquoted string near  
+11:06:38.599 ERROR - FPGA Configuration failed.Connection to Board Failed
+
+
+    Failed to Open JTAG Cable
+    Cable target is not connected to the host
+ 
+11:21:30.684 ERROR - FPGA Configuration failed.Connection to Board Failed
+
+
+    Failed to Open JTAG Cable
+    Cable target is not connected to the host
+ 
+11:24:01.691 INFO  - FPGA configured successfully with bitstream "D:/ra234-2013/lprs2-lab5/SDK/SDK_Workspace/basic_system_hw_platform/download.bit" 
+11:44:45.525 INFO  - FPGA configured successfully with bitstream "D:/ra234-2013/lprs2-lab5/SDK/SDK_Workspace/basic_system_hw_platform/download.bit" 
+11:47:46.700 INFO  - FPGA configured successfully with bitstream "D:/ra234-2013/lprs2-lab5/SDK/SDK_Workspace/basic_system_hw_platform/download.bit" 
+11:50:22.910 INFO  - FPGA configured successfully with bitstream "D:/ra234-2013/lprs2-lab5/SDK/SDK_Workspace/basic_system_hw_platform/download.bit" 
+11:50:42.801 INFO  - FPGA configured successfully with bitstream "D:/ra234-2013/lprs2-lab5/SDK/SDK_Workspace/basic_system_hw_platform/download.bit" 
+11:51:20.823 INFO  - FPGA configured successfully with bitstream "D:/ra234-2013/lprs2-lab5/SDK/SDK_Workspace/basic_system_hw_platform/download.bit" 
+11:52:24.037 ERROR - Unexpected error while parsing XMD response ?: com.google.gson.JsonSyntaxException: com.google.gson.stream.MalformedJsonException: invalid number or unquoted string near  
