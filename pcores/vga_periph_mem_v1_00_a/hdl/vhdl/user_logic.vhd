@@ -128,6 +128,8 @@ entity user_logic is
     red_o          : out std_logic_vector(7 downto 0);
     green_o        : out std_logic_vector(7 downto 0);
     blue_o         : out std_logic_vector(7 downto 0);
+	
+	irq_o : out std_logic;
     -- ADD USER PORTS ABOVE THIS LINE ------------------
 
     -- DO NOT EDIT BELOW THIS LINE ---------------------
@@ -191,6 +193,8 @@ architecture IMP of user_logic is
   constant REG_ADDR_04       : std_logic_vector(GRAPH_MEM_ADDR_WIDTH-1 downto 0) := conv_std_logic_vector( 4, GRAPH_MEM_ADDR_WIDTH);
   constant REG_ADDR_05       : std_logic_vector(GRAPH_MEM_ADDR_WIDTH-1 downto 0) := conv_std_logic_vector( 5, GRAPH_MEM_ADDR_WIDTH);
   constant REG_ADDR_06       : std_logic_vector(GRAPH_MEM_ADDR_WIDTH-1 downto 0) := conv_std_logic_vector( 6, GRAPH_MEM_ADDR_WIDTH);
+  constant REG_ADDR_07       : std_logic_vector(GRAPH_MEM_ADDR_WIDTH-1 downto 0) := conv_std_logic_vector( 7, GRAPH_MEM_ADDR_WIDTH);
+  constant REG_ADDR_08       : std_logic_vector(GRAPH_MEM_ADDR_WIDTH-1 downto 0) := conv_std_logic_vector( 8, GRAPH_MEM_ADDR_WIDTH);
   
   constant update_period     : std_logic_vector(31 downto 0) := conv_std_logic_vector(1, 32);
   
@@ -321,7 +325,12 @@ architecture IMP of user_logic is
   signal unit_sel            : std_logic_vector(1 downto 0);
   signal unit_addr           : std_logic_vector(GRAPH_MEM_ADDR_WIDTH-1 downto 0);--15+6+1
   signal reg_we              : std_logic;
-
+  
+  signal v_sync  			 : std_logic_vector(GRAPH_MEM_ADDR_WIDTH-1 downto 0);
+  signal we_en				 : std_logic;
+  signal s_tc				 : std_logic;
+  signal s_irq 				 : std_logic;
+  
 begin
   --USER logic implementation added here
   unit_sel  <= Bus2IP_Addr(25 downto 24);
@@ -348,6 +357,9 @@ begin
       background_color <= (others => '0');
       foreground_color <= (others => '0');
       frame_color      <= (others => '0');
+	  v_sync		   <= (others => '0');
+	  we_en			   <= '0';
+	  
     elsif (rising_edge(Bus2IP_Clk)) then 
         if (reg_we = '1') then
           case (unit_addr) is
@@ -359,12 +371,22 @@ begin
             when REG_ADDR_04 => foreground_color <= Bus2IP_Data(23 downto 0);
             when REG_ADDR_05 => background_color <= Bus2IP_Data(23 downto 0);
             when REG_ADDR_06 => frame_color      <= Bus2IP_Data(23 downto 0);
+			when REG_ADDR_07 => v_sync 			 <= Bus2IP_Data(31 downto 0);
+			when REG_ADDR_08 => we_en			 <= Bus2IP_Data(0);
             when others => null;
           end case;
         end if;
     end if;
   end process;
-    
+  
+  s_tc <= '1' when dir_pixel_row = v_sync(10 downto 0) else
+		  '0';
+  
+  s_irq <= (s_tc and we_en);
+  
+  irq_o <= s_irq;
+	
+  
 --  direct_mode      <= '0';
 --  display_mode     <= "01";
 --  font_size        <= x"1";
