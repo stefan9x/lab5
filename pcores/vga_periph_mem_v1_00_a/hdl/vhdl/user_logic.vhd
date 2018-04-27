@@ -371,8 +371,8 @@ begin
             when REG_ADDR_04 => foreground_color <= Bus2IP_Data(23 downto 0);
             when REG_ADDR_05 => background_color <= Bus2IP_Data(23 downto 0);
             when REG_ADDR_06 => frame_color      <= Bus2IP_Data(23 downto 0);
-			when REG_ADDR_07 => v_sync 			 <= Bus2IP_Data(31 downto 0);
-			when REG_ADDR_08 => we_en			 <= Bus2IP_Data(0);
+				when REG_ADDR_07 => v_sync 			 <= Bus2IP_Data(GRAPH_MEM_ADDR_WIDTH-1 downto 0);
+				when REG_ADDR_08 => we_en			 <= Bus2IP_Data(0);
             when others => null;
           end case;
         end if;

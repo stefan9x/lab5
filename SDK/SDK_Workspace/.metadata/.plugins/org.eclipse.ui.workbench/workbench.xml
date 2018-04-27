@@ -1,14 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<workbench progressCount="20" version="2.0">
+<workbench progressCount="16" version="2.0">
 <workbenchAdvisor/>
-<window height="1040" width="960" x="0" y="0">
+<window height="768" maximized="true" width="1024" x="438" y="287">
 <fastViewData fastViewLocation="1024"/>
 <perspectiveBar>
 <itemSize x="160"/>
 </perspectiveBar>
 <coolbarLayout>
 <coolItem id="group.file" itemType="typeGroupMarker"/>
-<coolItem id="org.eclipse.ui.workbench.file" itemType="typeToolBarContribution" x="271" y="22"/>
+<coolItem id="org.eclipse.ui.workbench.file" itemType="typeToolBarContribution" x="229" y="22"/>
 <coolItem id="additions" itemType="typeGroupMarker"/>
 <coolItem id="org.eclipse.cdt.ui.CElementCreationActionSet" itemType="typeToolBarContribution" x="167" y="22"/>
 <coolItem id="org.eclipse.debug.ui.launch.toolbar" itemType="typeToolBarContribution" x="-1" y="-1"/>
@@ -26,7 +26,7 @@
 <coolItem id="group.help" itemType="typeGroupMarker"/>
 <coolItem id="org.eclipse.ui.workbench.help" itemType="typeToolBarContribution" x="-1" y="-1"/>
 </coolbarLayout>
-<page aggregateWorkingSetId="Aggregate for window 1394005456214" focus="true" label="Workspace - C/C++">
+<page aggregateWorkingSetId="Aggregate for window 1524821058808" focus="true" label="Workspace - C/C++">
 <editors>
 <editorArea activeWorkbook="DefaultEditorWorkbook">
 <info part="DefaultEditorWorkbook">
@@ -35,41 +35,64 @@
 <part id="0"/>
 <part id="1"/>
 <part id="2"/>
+<part id="3"/>
+<part id="4"/>
 </presentation>
 </folder>
 </info>
 </editorArea>
-<editor activePart="true" focus="true" id="org.eclipse.cdt.ui.editor.CEditor" name="helloworld.c" partName="helloworld.c" path="D:/ra234-2013/lprs2-lab5/SDK/SDK_Workspace/hello_world/src/helloworld.c" title="helloworld.c" tooltip="hello_world/src/helloworld.c" workbook="DefaultEditorWorkbook">
-<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/hello_world/src/helloworld.c"/>
-<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="3172" selectionTopPixel="434"/>
+<editor id="com.xilinx.sdk.hw.ui.HwSpecXMLEditor" name="system.xml" partName="system.xml" path="D:/ra234-2013/lprs2-lab5/SDK/SDK_Workspace/lprs2-lab5_hw_platform/system.xml" title="system.xml" tooltip="lprs2-lab5_hw_platform/system.xml" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/lprs2-lab5_hw_platform/system.xml"/>
 </editor>
-<editor id="org.eclipse.cdt.ui.editor.CEditor" name="vga_periph_mem.c" partName="vga_periph_mem.c" path="D:/ra234-2013/lprs2-lab5/SDK/SDK_Workspace/hello_world/src/vga_periph_mem.c" title="vga_periph_mem.c" tooltip="hello_world/src/vga_periph_mem.c" workbook="DefaultEditorWorkbook">
-<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/hello_world/src/vga_periph_mem.c"/>
-<editorState selectionHorizontalPixel="0" selectionLength="34" selectionOffset="1908" selectionTopPixel="524"/>
+<editor id="com.xilinx.sdk.sw.MSSEditor" name="system.mss" partName="system.mss" path="D:/ra234-2013/lprs2-lab5/SDK/SDK_Workspace/interupt_bsp/system.mss" title="system.mss" tooltip="interupt_bsp/system.mss" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/interupt_bsp/system.mss"/>
 </editor>
-<editor id="org.eclipse.cdt.ui.editor.CEditor" name="vga_periph_mem.h" partName="vga_periph_mem.h" path="D:/ra234-2013/lprs2-lab5/SDK/SDK_Workspace/hello_world/src/vga_periph_mem.h" title="vga_periph_mem.h" tooltip="hello_world/src/vga_periph_mem.h" workbook="DefaultEditorWorkbook">
-<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/hello_world/src/vga_periph_mem.h"/>
-<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="2457" selectionTopPixel="599"/>
+<editor id="org.eclipse.cdt.ui.editor.CEditor" name="helloworld.c" partName="helloworld.c" path="D:/ra234-2013/lprs2-lab5/SDK/SDK_Workspace/interupt/src/helloworld.c" title="helloworld.c" tooltip="interupt/src/helloworld.c" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/interupt/src/helloworld.c"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="170" selectionTopPixel="0"/>
+</editor>
+<editor id="org.eclipse.cdt.ui.editor.CEditor" name="xparameters.h" partName="xparameters.h" path="D:/ra234-2013/lprs2-lab5/SDK/SDK_Workspace/interupt_bsp/microblaze_0/include/xparameters.h" title="xparameters.h" tooltip="interupt_bsp/microblaze_0/include/xparameters.h" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/interupt_bsp/microblaze_0/include/xparameters.h"/>
+<editorState selectionHorizontalPixel="0" selectionLength="41" selectionOffset="7249" selectionTopPixel="45"/>
+</editor>
+<editor activePart="true" focus="true" id="org.eclipse.cdt.ui.editor.CEditor" name="vga_periph_mem.c" partName="vga_periph_mem.c" path="D:/ra234-2013/lprs2-lab5/SDK/SDK_Workspace/interupt/src/vga_periph_mem.c" title="vga_periph_mem.c" tooltip="interupt/src/vga_periph_mem.c" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/interupt/src/vga_periph_mem.c"/>
+<editorState selectionHorizontalPixel="0" selectionLength="11" selectionOffset="1490" selectionTopPixel="225"/>
 </editor>
 </editors>
 <views>
 <view id="org.eclipse.ui.navigator.ProjectExplorer" partName="Project Explorer">
 <viewState CommonNavigator.LINKING_ENABLED="0" org.eclipse.cdt.ui.cview.groupincludes="false" org.eclipse.cdt.ui.cview.groupmacros="false" org.eclipse.cdt.ui.editor.CUChildren="true" org.eclipse.ui.navigator.resources.workingSets.showTopLevelWorkingSets="0"/>
 </view>
-<view id="org.eclipse.ui.views.PropertySheet" partName="Properties"/>
+<view id="org.eclipse.ui.views.PropertySheet" partName="Properties">
+<viewState/>
+</view>
 <view id="org.eclipse.cdt.make.ui.views.MakeView" partName="Make Target"/>
 <view id="org.eclipse.tm.terminal.view.TerminalView" partName="Terminal 1">
 <viewState ConnectionType="org.eclipse.tm.internal.terminal.serial.SerialConnector" Title="Terminal 1" _keys_="ConnectionType,Title,connectionManageractive,connectionManagerconnection0ConnectionType,connectionManagerconnection0Encoding,connectionManagerconnection0HasCommandInputField,connectionManagerconnection0PartName,connectionManagerconnection0Summary,connectionManagerconnection0org.eclipse.tm.internal.terminal.serial.SerialConnector.BaudRate,connectionManagerconnection0org.eclipse.tm.internal.terminal.serial.SerialConnector.DataBits,connectionManagerconnection0org.eclipse.tm.internal.terminal.serial.SerialConnector.FlowControl,connectionManagerconnection0org.eclipse.tm.internal.terminal.serial.SerialConnector.Parity,connectionManagerconnection0org.eclipse.tm.internal.terminal.serial.SerialConnector.SerialPort,connectionManagerconnection0org.eclipse.tm.internal.terminal.serial.SerialConnector.StopBits,connectionManagerconnection0org.eclipse.tm.internal.terminal.telnet.TelnetConnector.NetworkPort,connectionManagerconnection0org.eclipse.tm.internal.terminal.telnet.TelnetConnector.Timeout,connectionManagersize,org.eclipse.tm.internal.terminal.serial.SerialConnector.BaudRate,org.eclipse.tm.internal.terminal.serial.SerialConnector.DataBits,org.eclipse.tm.internal.terminal.serial.SerialConnector.FlowControl,org.eclipse.tm.internal.terminal.serial.SerialConnector.Parity,org.eclipse.tm.internal.terminal.serial.SerialConnector.SerialPort,org.eclipse.tm.internal.terminal.serial.SerialConnector.StopBits" connectionManageractive="connection0" connectionManagerconnection0ConnectionType="org.eclipse.tm.internal.terminal.serial.SerialConnector" connectionManagerconnection0Encoding="ISO-8859-1" connectionManagerconnection0HasCommandInputField="false" connectionManagerconnection0PartName="Terminal 1" connectionManagerconnection0Summary="COM1, 9600, 8, 1, None, None" connectionManagersize="1">
-<connectionManagerconnection0org>&#x0A;<eclipse>&#x0A;<tm>&#x0A;<internal>&#x0A;<terminal>&#x0A;<serial>&#x0A;<SerialConnector BaudRate="9600" DataBits="8" FlowControl="None" Parity="None" SerialPort="COM1" StopBits="1"/>
+<connectionManagerconnection0org>
+<eclipse>
+<tm>
+<internal>
+<terminal>
+<serial>
+<SerialConnector BaudRate="9600" DataBits="8" FlowControl="None" Parity="None" SerialPort="COM1" StopBits="1"/>
 </serial>
-<telnet>&#x0A;<TelnetConnector NetworkPort="23" Timeout="10"/>
+<telnet>
+<TelnetConnector NetworkPort="23" Timeout="10"/>
 </telnet>
 </terminal>
 </internal>
 </tm>
 </eclipse>
 </connectionManagerconnection0org>
-<org>&#x0A;<eclipse>&#x0A;<tm>&#x0A;<internal>&#x0A;<terminal>&#x0A;<serial>&#x0A;<SerialConnector BaudRate="9600" DataBits="8" FlowControl="None" Parity="None" SerialPort="COM1" StopBits="1"/>
+<org>
+<eclipse>
+<tm>
+<internal>
+<terminal>
+<serial>
+<SerialConnector BaudRate="9600" DataBits="8" FlowControl="None" Parity="None" SerialPort="COM1" StopBits="1"/>
 </serial>
 </terminal>
 </internal>
@@ -81,8 +104,8 @@
 <view id="org.eclipse.ui.views.ProblemView" partName="Problems">
 <viewState PRIMARY_SORT_FIELD="org.eclipse.ui.ide.severityAndDescriptionField" categoryGroup="org.eclipse.ui.ide.severity" markerContentGenerator="org.eclipse.ui.ide.problemsGenerator" partName="Problems">
 <expanded>
-<category IMemento.internal.id="Errors"/>
 <category IMemento.internal.id="Warnings"/>
+<category IMemento.internal.id="Errors"/>
 </expanded>
 <columnWidths org.eclipse.ui.ide.locationField="90" org.eclipse.ui.ide.markerType="90" org.eclipse.ui.ide.pathField="120" org.eclipse.ui.ide.resourceField="90" org.eclipse.ui.ide.severityAndDescriptionField="300"/>
 <visible IMemento.internal.id="org.eclipse.ui.ide.severityAndDescriptionField"/>
@@ -170,7 +193,7 @@
 </presentation>
 </folder>
 </info>
-<info folder="true" part="org.eclipse.ui.internal.ViewStack@7cd0570e" ratio="0.75" ratioLeft="750" ratioRight="250" relationship="2" relative="topLeft">
+<info folder="true" part="org.eclipse.ui.internal.ViewStack@21e8614a" ratio="0.75" ratioLeft="750" ratioRight="250" relationship="2" relative="topLeft">
 <folder appearance="2" expanded="2">
 <page content="org.eclipse.help.ui.HelpView" label="LabelNotFound"/>
 <page content="org.eclipse.ui.internal.introview" label="LabelNotFound"/>
@@ -178,8 +201,8 @@
 <presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory"/>
 </folder>
 </info>
-<info part="org.eclipse.ui.editorss" ratio="0.22508039" ratioLeft="210" ratioRight="723" relationship="2" relative="topLeft"/>
-<info folder="true" part="bottom" ratio="0.7458848" ratioLeft="725" ratioRight="247" relationship="4" relative="org.eclipse.ui.editorss">
+<info part="org.eclipse.ui.editorss" ratio="0.25" ratioLeft="250" ratioRight="750" relationship="2" relative="topLeft"/>
+<info folder="true" part="bottom" ratio="0.7496136" ratioLeft="485" ratioRight="162" relationship="4" relative="org.eclipse.ui.editorss">
 <folder activePageID="org.eclipse.ui.console.ConsoleView" appearance="2" expanded="2">
 <page content="org.eclipse.ui.views.ProblemView" label="Problems"/>
 <page content="org.eclipse.ui.views.TaskList" label="Tasks"/>
@@ -195,7 +218,7 @@
 </presentation>
 </folder>
 </info>
-<info folder="true" part="topRight" ratio="0.8527778" ratioLeft="614" ratioRight="106" relationship="2" relative="org.eclipse.ui.editorss">
+<info folder="true" part="topRight" ratio="0.7493333" ratioLeft="562" ratioRight="188" relationship="2" relative="org.eclipse.ui.editorss">
 <folder activePageID="org.eclipse.ui.views.ContentOutline" appearance="2" expanded="2">
 <page content="org.eclipse.ui.views.ContentOutline" label="Outline"/>
 <page content="org.eclipse.cdt.make.ui.views.MakeView" label="Make Target"/>
@@ -212,159 +235,148 @@
 <workingSets/>
 <navigationHistory>
 <editors>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" path="/hello_world/src/helloworld.c"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" path="/hello_world/src/vga_periph_mem.c"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" path="/hello_world/src/vga_periph_mem.h"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.xilinx.sdk.hw.ui.HwSpecXMLEditor" path="/lprs2-lab5_hw_platform/system.xml"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.xilinx.sdk.sw.MSSEditor" path="/interupt_bsp/system.mss"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" path="/interupt/src/helloworld.c"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" path="/interupt/src/platform.c"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" path="/interupt_bsp/microblaze_0/include/xparameters.h"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" path="/interupt_bsp/microblaze_0/include/xio.h"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" path="/interupt/src/vga_periph_mem.h"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" path="/interupt/src/vga_periph_mem.c"/>
 </editors>
-<item historyLabel="vga_periph_mem.c" index="1">
-<position info="not_deleted" x="1298" y="0"/>
-</item>
-<item historyLabel="vga_periph_mem.h" index="2">
-<position info="not_deleted" x="2786" y="0"/>
-</item>
-<item historyLabel="helloworld.c" index="0">
-<position info="not_deleted" x="2379" y="0"/>
-</item>
-<item historyLabel="vga_periph_mem.h" index="2">
-<position info="not_deleted" x="2429" y="0"/>
-</item>
-<item historyLabel="vga_periph_mem.c" index="1">
-<position info="not_deleted" x="1100" y="0"/>
-</item>
-<item historyLabel="helloworld.c" index="0">
-<position info="not_deleted" x="2350" y="0"/>
-</item>
-<item historyLabel="vga_periph_mem.c" index="1">
-<position info="not_deleted" x="1510" y="0"/>
-</item>
-<item historyLabel="helloworld.c" index="0">
-<position info="not_deleted" x="2350" y="0"/>
-</item>
-<item historyLabel="vga_periph_mem.c" index="1">
-<position info="not_deleted" x="1891" y="0"/>
-</item>
-<item historyLabel="helloworld.c" index="0">
-<position info="not_deleted" x="3421" y="0"/>
-</item>
-<item historyLabel="vga_periph_mem.h" index="2">
-<position info="not_deleted" x="2429" y="0"/>
-</item>
-<item historyLabel="vga_periph_mem.c" index="1">
-<position info="not_deleted" x="1891" y="0"/>
-</item>
-<item historyLabel="helloworld.c" index="0">
-<position info="not_deleted" x="2825" y="0"/>
-</item>
-<item historyLabel="vga_periph_mem.c" index="1">
-<position info="not_deleted" x="1891" y="0"/>
-</item>
-<item historyLabel="helloworld.c" index="0">
-<position info="not_deleted" x="2825" y="0"/>
-</item>
-<item historyLabel="helloworld.c" index="0">
-<position info="not_deleted" x="3414" y="0"/>
-</item>
-<item historyLabel="vga_periph_mem.c" index="1">
-<position info="not_deleted" x="1891" y="0"/>
-</item>
-<item historyLabel="vga_periph_mem.c" index="1">
-<position info="not_deleted" x="1891" y="0"/>
-</item>
-<item historyLabel="helloworld.c" index="0">
+<item historyLabel="system.xml" index="0"/>
+<item historyLabel="system.mss" index="1"/>
+<item historyLabel="helloworld.c" index="2">
 <position/>
 </item>
-<item historyLabel="vga_periph_mem.h" index="2">
-<position info="not_deleted" x="2457" y="0"/>
+<item historyLabel="platform.c" index="3">
+<position info="not_deleted" x="82" y="0"/>
 </item>
-<item historyLabel="vga_periph_mem.c" index="1">
-<position info="not_deleted" x="1899" y="0"/>
+<item historyLabel="helloworld.c" index="2">
+<position info="not_deleted" x="79" y="0"/>
 </item>
-<item historyLabel="helloworld.c" index="0">
+<item historyLabel="xparameters.h" index="4">
+<position info="not_deleted" x="7249" y="41"/>
+</item>
+<item historyLabel="helloworld.c" index="2">
+<position info="not_deleted" x="552" y="41"/>
+</item>
+<item historyLabel="xparameters.h" index="4">
+<position info="not_deleted" x="7249" y="41"/>
+</item>
+<item historyLabel="helloworld.c" index="2">
+<position info="not_deleted" x="1029" y="25"/>
+</item>
+<item historyLabel="xparameters.h" index="4">
+<position info="not_deleted" x="837" y="25"/>
+</item>
+<item historyLabel="helloworld.c" index="2">
+<position info="not_deleted" x="1029" y="25"/>
+</item>
+<item historyLabel="xparameters.h" index="4">
+<position info="not_deleted" x="837" y="25"/>
+</item>
+<item historyLabel="helloworld.c" index="2">
+<position info="not_deleted" x="1029" y="25"/>
+</item>
+<item historyLabel="xparameters.h" index="4">
+<position info="not_deleted" x="837" y="25"/>
+</item>
+<item historyLabel="helloworld.c" index="2">
+<position info="not_deleted" x="1029" y="25"/>
+</item>
+<item historyLabel="xparameters.h" index="4">
+<position info="not_deleted" x="837" y="25"/>
+</item>
+<item historyLabel="helloworld.c" index="2">
+<position info="not_deleted" x="1054" y="0"/>
+</item>
+<item historyLabel="helloworld.c" index="2">
+<position info="not_deleted" x="1078" y="17"/>
+</item>
+<item historyLabel="xparameters.h" index="4">
+<position info="not_deleted" x="837" y="25"/>
+</item>
+<item historyLabel="helloworld.c" index="2">
+<position info="not_deleted" x="1078" y="17"/>
+</item>
+<item historyLabel="xparameters.h" index="4">
+<position info="not_deleted" x="7249" y="41"/>
+</item>
+<item historyLabel="helloworld.c" index="2">
+<position info="not_deleted" x="1379" y="12"/>
+</item>
+<item historyLabel="xparameters.h" index="4">
+<position info="not_deleted" x="7249" y="41"/>
+</item>
+<item historyLabel="helloworld.c" index="2">
+<position info="not_deleted" x="1400" y="25"/>
+</item>
+<item historyLabel="xparameters.h" index="4">
+<position info="not_deleted" x="7249" y="41"/>
+</item>
+<item historyLabel="helloworld.c" index="2">
+<position info="not_deleted" x="548" y="0"/>
+</item>
+<item historyLabel="xio.h" index="5">
+<position info="not_deleted" x="7635" y="9"/>
+</item>
+<item historyLabel="helloworld.c" index="2">
+<position info="not_deleted" x="511" y="27"/>
+</item>
+<item historyLabel="xio.h" index="5">
+<position info="not_deleted" x="7635" y="9"/>
+</item>
+<item historyLabel="helloworld.c" index="2">
+<position info="not_deleted" x="2102" y="0"/>
+</item>
+<item historyLabel="xparameters.h" index="4">
+<position info="not_deleted" x="7249" y="41"/>
+</item>
+<item historyLabel="helloworld.c" index="2">
+<position info="not_deleted" x="2102" y="0"/>
+</item>
+<item historyLabel="xparameters.h" index="4">
+<position info="not_deleted" x="7249" y="41"/>
+</item>
+<item historyLabel="helloworld.c" index="2">
+<position info="not_deleted" x="312" y="0"/>
+</item>
+<item historyLabel="xparameters.h" index="4">
+<position info="not_deleted" x="7249" y="41"/>
+</item>
+<item historyLabel="vga_periph_mem.h" index="6">
+<position info="not_deleted" x="80" y="0"/>
+</item>
+<item historyLabel="xparameters.h" index="4">
+<position info="not_deleted" x="7249" y="41"/>
+</item>
+<item historyLabel="vga_periph_mem.c" index="7">
+<position info="not_deleted" x="976" y="8"/>
+</item>
+<item historyLabel="helloworld.c" index="2">
+<position info="not_deleted" x="312" y="0"/>
+</item>
+<item historyLabel="xparameters.h" index="4">
+<position info="not_deleted" x="7249" y="41"/>
+</item>
+<item historyLabel="vga_periph_mem.c" index="7">
+<position info="not_deleted" x="1533" y="363"/>
+</item>
+<item historyLabel="helloworld.c" index="2">
 <position/>
 </item>
-<item historyLabel="vga_periph_mem.c" index="1">
-<position info="not_deleted" x="1899" y="0"/>
+<item historyLabel="xparameters.h" index="4">
+<position info="not_deleted" x="7249" y="41"/>
 </item>
-<item historyLabel="helloworld.c" index="0">
-<position/>
+<item historyLabel="vga_periph_mem.c" index="7">
+<position info="not_deleted" x="1490" y="11"/>
 </item>
-<item historyLabel="helloworld.c" index="0">
-<position info="not_deleted" x="2889" y="0"/>
+<item historyLabel="helloworld.c" index="2">
+<position info="not_deleted" x="170" y="0"/>
 </item>
-<item historyLabel="helloworld.c" index="0">
-<position info="not_deleted" x="2933" y="0"/>
-</item>
-<item historyLabel="vga_periph_mem.c" index="1">
-<position info="not_deleted" x="1746" y="16"/>
-</item>
-<item historyLabel="helloworld.c" index="0">
-<position info="not_deleted" x="2906" y="0"/>
-</item>
-<item historyLabel="vga_periph_mem.c" index="1">
-<position info="not_deleted" x="1615" y="19"/>
-</item>
-<item historyLabel="helloworld.c" index="0">
-<position info="not_deleted" x="2841" y="0"/>
-</item>
-<item historyLabel="vga_periph_mem.c" index="1">
-<position info="not_deleted" x="1483" y="0"/>
-</item>
-<item historyLabel="helloworld.c" index="0">
-<position info="not_deleted" x="2841" y="0"/>
-</item>
-<item historyLabel="vga_periph_mem.c" index="1">
-<position info="not_deleted" x="1672" y="20"/>
-</item>
-<item historyLabel="helloworld.c" index="0">
-<position info="not_deleted" x="2906" y="0"/>
-</item>
-<item historyLabel="vga_periph_mem.c" index="1">
-<position info="not_deleted" x="1652" y="0"/>
-</item>
-<item historyLabel="helloworld.c" index="0">
-<position info="not_deleted" x="1955" y="0"/>
-</item>
-<item historyLabel="vga_periph_mem.c" index="1">
-<position info="not_deleted" x="1690" y="0"/>
-</item>
-<item historyLabel="vga_periph_mem.h" index="2">
-<position info="not_deleted" x="2457" y="0"/>
-</item>
-<item historyLabel="vga_periph_mem.c" index="1">
-<position info="not_deleted" x="1690" y="0"/>
-</item>
-<item historyLabel="helloworld.c" index="0">
-<position info="not_deleted" x="2909" y="0"/>
-</item>
-<item historyLabel="vga_periph_mem.c" index="1">
-<position info="not_deleted" x="1485" y="45"/>
-</item>
-<item historyLabel="vga_periph_mem.h" index="2">
-<position info="not_deleted" x="2457" y="0"/>
-</item>
-<item historyLabel="vga_periph_mem.c" index="1">
-<position info="not_deleted" x="1485" y="45"/>
-</item>
-<item historyLabel="helloworld.c" index="0">
-<position info="not_deleted" x="3421" y="0"/>
-</item>
-<item historyLabel="vga_periph_mem.c" index="1">
-<position info="not_deleted" x="1908" y="34"/>
-</item>
-<item historyLabel="helloworld.c" index="0">
-<position info="not_deleted" x="2841" y="0"/>
-</item>
-<item historyLabel="vga_periph_mem.c" index="1">
-<position info="not_deleted" x="1908" y="34"/>
-</item>
-<item historyLabel="helloworld.c" index="0">
-<position info="not_deleted" x="2841" y="0"/>
-</item>
-<item historyLabel="helloworld.c" index="0">
-<position info="not_deleted" x="2955" y="0"/>
-</item>
-<item active="true" historyLabel="helloworld.c" index="0">
-<position info="not_deleted" x="2979" y="0"/>
+<item active="true" historyLabel="vga_periph_mem.c" index="7">
+<position info="not_deleted" x="1490" y="11"/>
 </item>
 </navigationHistory>
 <input factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/" type="8"/>
@@ -383,32 +395,29 @@
 </trimLayout>
 </window>
 <mruList>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="vga_periph_mem.h" tooltip="hello_world/src/vga_periph_mem.h">
-<persistable path="/hello_world/src/vga_periph_mem.h"/>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="vga_periph_mem.c" tooltip="interupt/src/vga_periph_mem.c">
+<persistable path="/interupt/src/vga_periph_mem.c"/>
 </file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="platform.h" tooltip="hello_world/src/platform.h">
-<persistable path="/hello_world/src/platform.h"/>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="vga_periph_mem.h" tooltip="interupt/src/vga_periph_mem.h">
+<persistable path="/interupt/src/vga_periph_mem.h"/>
 </file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="platform_config.h" tooltip="hello_world/src/platform_config.h">
-<persistable path="/hello_world/src/platform_config.h"/>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="xio.h" tooltip="interupt_bsp/microblaze_0/include/xio.h">
+<persistable path="/interupt_bsp/microblaze_0/include/xio.h"/>
 </file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="vga_periph_mem.c" tooltip="hello_world/src/vga_periph_mem.c">
-<persistable path="/hello_world/src/vga_periph_mem.c"/>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="xparameters.h" tooltip="interupt_bsp/microblaze_0/include/xparameters.h">
+<persistable path="/interupt_bsp/microblaze_0/include/xparameters.h"/>
 </file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="platform.c" tooltip="hello_world/src/platform.c">
-<persistable path="/hello_world/src/platform.c"/>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="platform.c" tooltip="interupt/src/platform.c">
+<persistable path="/interupt/src/platform.c"/>
 </file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="helloworld.c" tooltip="hello_world/src/helloworld.c">
-<persistable path="/hello_world/src/helloworld.c"/>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="helloworld.c" tooltip="interupt/src/helloworld.c">
+<persistable path="/interupt/src/helloworld.c"/>
 </file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="vga_periph_mem.h" tooltip="hello_world_bsp/microblaze_0/libsrc/vga_periph_mem_v1_00_a/src/vga_periph_mem.h">
-<persistable path="/hello_world_bsp/microblaze_0/libsrc/vga_periph_mem_v1_00_a/src/vga_periph_mem.h"/>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.xilinx.sdk.sw.MSSEditor" name="system.mss" tooltip="interupt_bsp/system.mss">
+<persistable path="/interupt_bsp/system.mss"/>
 </file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.xilinx.sdk.sw.MSSEditor" name="system.mss" tooltip="hello_world_bsp/system.mss">
-<persistable path="/hello_world_bsp/system.mss"/>
-</file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.xilinx.sdk.hw.ui.HwSpecXMLEditor" name="system.xml" tooltip="basic_system_hw_platform/system.xml">
-<persistable path="/basic_system_hw_platform/system.xml"/>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.xilinx.sdk.hw.ui.HwSpecXMLEditor" name="system.xml" tooltip="lprs2-lab5_hw_platform/system.xml">
+<persistable path="/lprs2-lab5_hw_platform/system.xml"/>
 </file>
 </mruList>
 </workbench>
