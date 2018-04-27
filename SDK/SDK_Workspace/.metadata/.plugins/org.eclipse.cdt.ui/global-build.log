@@ -739,3 +739,169 @@ elfcheck passed.
 12:08:45 **** Auto Build of project interupt_bsp ****
 make -k all 
 'Finished building libraries'
+12:14:15 **** Auto Build of configuration Debug for project interupt ****
+make all 
+'Building file: ../src/helloworld.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../interupt_bsp/microblaze_0/include -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mcpu=v8.50.b -mno-xl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.d" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c: In function 'interrupt_handler':
+../src/helloworld.c:14:8: error: 'smer' undeclared (first use in this function)
+../src/helloworld.c:14:8: note: each undeclared identifier is reported only once for each function it appears in
+make: *** [src/helloworld.o] Greška 1
+12:14:32 **** Auto Build of configuration Debug for project interupt ****
+make all 
+'Building file: ../src/helloworld.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../interupt_bsp/microblaze_0/include -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mcpu=v8.50.b -mno-xl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.d" -o "src/helloworld.o" "../src/helloworld.c"
+'Finished building: ../src/helloworld.c'
+' '
+'Building target: interupt.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../interupt_bsp/microblaze_0/lib -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mcpu=v8.50.b -mno-xl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "interupt.elf"  ./src/helloworld.o ./src/platform.o ./src/vga_periph_mem.o ./src/vga_periph_mem_selftest.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: interupt.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size interupt.elf  |tee "interupt.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+   7830	    320	   2240	  10390	   2896	interupt.elf
+'Finished building: interupt.elf.size'
+' '
+'Invoking: Xilinx ELF Check'
+elfcheck interupt.elf -hw ../../lprs2-lab5_hw_platform/system.xml -pe microblaze_0  |tee "interupt.elf.elfcheck"
+elfcheck
+Xilinx EDK 14.6 Build EDK_P.68d
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+
+Command Line: elfcheck -hw ../../lprs2-lab5_hw_platform/system.xml -pe
+microblaze_0 interupt.elf 
+
+ELF file	: interupt.elf
+elfcheck passed.
+'Finished building: interupt.elf.elfcheck'
+' '
+12:14:37 **** Incremental Build of configuration Debug for project interupt ****
+make all 
+make: Ništa za napraviti za `all'.
+12:14:50 **** Auto Build of project interupt_bsp ****
+make -k all 
+'Finished building libraries'
+12:15:14 **** Auto Build of configuration Debug for project interupt ****
+make all 
+'Building file: ../src/helloworld.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../interupt_bsp/microblaze_0/include -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mcpu=v8.50.b -mno-xl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.d" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c: In function 'clear_text_screen':
+../src/helloworld.c:15:2: error: expected declaration specifiers before 'if'
+../src/helloworld.c:18:7: error: expected declaration specifiers before 'if'
+../src/helloworld.c:22:7: error: expected declaration specifiers before 'if'
+../src/helloworld.c:27:7: error: expected declaration specifiers before 'if'
+../src/helloworld.c:31:1: error: expected declaration specifiers before '}' token
+../src/helloworld.c:33:1: error: expected '=', ',', ';', 'asm' or '__attribute__' before '{' token
+../src/helloworld.c:78:1: error: expected '{' at end of input
+../src/helloworld.c: In function 'interrupt_handler':
+../src/helloworld.c:78:1: error: expected declaration or statement at end of input
+make: *** [src/helloworld.o] Greška 1
+12:15:19 **** Auto Build of configuration Debug for project interupt ****
+make all 
+'Building file: ../src/helloworld.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../interupt_bsp/microblaze_0/include -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mcpu=v8.50.b -mno-xl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.d" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c: In function 'interrupt_handler':
+../src/helloworld.c:14:2: warning: parameter names (without types) in function declaration [enabled by default]
+'Finished building: ../src/helloworld.c'
+' '
+'Building target: interupt.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../interupt_bsp/microblaze_0/lib -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mcpu=v8.50.b -mno-xl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "interupt.elf"  ./src/helloworld.o ./src/platform.o ./src/vga_periph_mem.o ./src/vga_periph_mem_selftest.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: interupt.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size interupt.elf  |tee "interupt.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+   7830	    320	   2240	  10390	   2896	interupt.elf
+'Finished building: interupt.elf.size'
+' '
+'Invoking: Xilinx ELF Check'
+elfcheck interupt.elf -hw ../../lprs2-lab5_hw_platform/system.xml -pe microblaze_0  |tee "interupt.elf.elfcheck"
+elfcheck
+Xilinx EDK 14.6 Build EDK_P.68d
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+
+Command Line: elfcheck -hw ../../lprs2-lab5_hw_platform/system.xml -pe
+microblaze_0 interupt.elf 
+
+ELF file	: interupt.elf
+elfcheck passed.
+'Finished building: interupt.elf.elfcheck'
+' '
+12:15:22 **** Auto Build of configuration Debug for project interupt ****
+make all 
+'Building file: ../src/helloworld.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../interupt_bsp/microblaze_0/include -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mcpu=v8.50.b -mno-xl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.d" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c: In function 'interrupt_handler':
+../src/helloworld.c:14:2: warning: passing argument 1 of 'clear_text_screen' makes integer from pointer without a cast [enabled by default]
+../src/vga_periph_mem.h:73:6: note: expected 'Xuint32' but argument is of type 'void *'
+'Finished building: ../src/helloworld.c'
+' '
+'Building target: interupt.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../interupt_bsp/microblaze_0/lib -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mcpu=v8.50.b -mno-xl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "interupt.elf"  ./src/helloworld.o ./src/platform.o ./src/vga_periph_mem.o ./src/vga_periph_mem_selftest.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: interupt.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size interupt.elf  |tee "interupt.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+   7958	    320	   2240	  10518	   2916	interupt.elf
+'Finished building: interupt.elf.size'
+' '
+'Invoking: Xilinx ELF Check'
+elfcheck interupt.elf -hw ../../lprs2-lab5_hw_platform/system.xml -pe microblaze_0  |tee "interupt.elf.elfcheck"
+elfcheck
+Xilinx EDK 14.6 Build EDK_P.68d
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+
+Command Line: elfcheck -hw ../../lprs2-lab5_hw_platform/system.xml -pe
+microblaze_0 interupt.elf 
+
+ELF file	: interupt.elf
+elfcheck passed.
+'Finished building: interupt.elf.elfcheck'
+' '
+12:15:34 **** Auto Build of project interupt_bsp ****
+make -k all 
+'Finished building libraries'
+12:16:09 **** Auto Build of configuration Debug for project interupt ****
+make all 
+'Building file: ../src/helloworld.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../interupt_bsp/microblaze_0/include -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mcpu=v8.50.b -mno-xl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.d" -o "src/helloworld.o" "../src/helloworld.c"
+'Finished building: ../src/helloworld.c'
+' '
+'Building target: interupt.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../interupt_bsp/microblaze_0/lib -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mcpu=v8.50.b -mno-xl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "interupt.elf"  ./src/helloworld.o ./src/platform.o ./src/vga_periph_mem.o ./src/vga_periph_mem_selftest.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: interupt.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size interupt.elf  |tee "interupt.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+   7958	    320	   2240	  10518	   2916	interupt.elf
+'Finished building: interupt.elf.size'
+' '
+'Invoking: Xilinx ELF Check'
+elfcheck interupt.elf -hw ../../lprs2-lab5_hw_platform/system.xml -pe microblaze_0  |tee "interupt.elf.elfcheck"
+elfcheck
+Xilinx EDK 14.6 Build EDK_P.68d
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+
+Command Line: elfcheck -hw ../../lprs2-lab5_hw_platform/system.xml -pe
+microblaze_0 interupt.elf 
+
+ELF file	: interupt.elf
+elfcheck passed.
+'Finished building: interupt.elf.elfcheck'
+' '
+12:16:21 **** Auto Build of project interupt_bsp ****
+make -k all 
+'Finished building libraries'

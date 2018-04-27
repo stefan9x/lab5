@@ -7,11 +7,27 @@
 #include "vga_periph_mem.h"
 
 XIntc Intc;
-
+int a = 0;
+int smer = 1;
 void interrupt_handler(void * baseaddr_p) {
 	xil_printf("\n\rtimer timeout.");
 	clear_text_screen(XPAR_VGA_PERIPH_MEM_0_S_AXI_MEM0_BASEADDR);
-	draw_square(XPAR_VGA_PERIPH_MEM_0_S_AXI_MEM0_BASEADDR, 8);
+	if(a == 16) {
+	    		smer=-1;
+	    	}
+	    	if (a == 0){
+	    		smer = 1;
+	    	}
+
+	    	if (smer == -1){
+	    		clear_graphics_screen(XPAR_VGA_PERIPH_MEM_0_S_AXI_MEM0_BASEADDR);
+	    		draw_square(XPAR_VGA_PERIPH_MEM_0_S_AXI_MEM0_BASEADDR, a--);
+	    	}
+
+	    	if (smer == 1){
+				clear_graphics_screen(XPAR_VGA_PERIPH_MEM_0_S_AXI_MEM0_BASEADDR);
+				draw_square(XPAR_VGA_PERIPH_MEM_0_S_AXI_MEM0_BASEADDR, a++);
+			}
 }
 int main()
 {
